@@ -14,6 +14,10 @@ Secondary Color (Orange): #e0b354;
 /*body {
   background-color: lightgray;
 }*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -134,10 +138,6 @@ button:focus,
   margin: 0 auto;
 }
 /* below is the universal selector "*" */
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
 .page-footer {
   clear: both;
   display: -webkit-box;
