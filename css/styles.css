@@ -19,6 +19,7 @@ Secondary Color (Orange): #e0b354;
   --color-change-fifty: #fcffad;
   --color-change-hundred: #f76414;
   --heading-font-weight: 700;
+  --body-color-main: white;
 }
 body {
   font-family: 'Lato', sans-serif;
@@ -27,6 +28,8 @@ body {
   /* sets the font size to 16px */
   line-height: 1.6;
   /* sets the line-height to 1.6*/
+  /* sets the line-height to 1.6*/
+  background-color: var(--body-color-main);
 }
 h1 {
   font-size: 30px;
@@ -69,7 +72,7 @@ a:active {
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 5px;
   /* gives the button a bottom border with a width of 2px, a type of solid,
 and a color in RGBA format */
   border-bottom: 2px solid rgba(0,0,0,0.9);
@@ -89,6 +92,7 @@ button:focus,
   background-color: var(--secondary-color);
   color: var(--text-color);
 }
+
 .navigation-list__item--active {
   text-decoration: none;
 }
@@ -105,6 +109,9 @@ button:focus,
 .profile {
   max-width: 700px;
   margin: 0 auto;
+}
+.about-picture {
+  height: auto;
 }
 .about-content {
   text-align: center;
@@ -133,6 +140,10 @@ button:focus,
 .page-header__item {
   flex: 0 1 200px;
 }
+#page-header__item-logo{
+  padding: 5px;
+  border: 5px ridge black;
+}
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
@@ -143,10 +154,50 @@ button:focus,
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+  padding: 2px 4px;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+.call-to-action {
+  padding: 5px;
+  color: white !important;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
 }
 .interest-list {
   list-style-type: none;
   padding: 10px;
+}
+.contact-david{
+  text-align: center;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 30px;
+}
+.contact-visitor {
+  text-align: center;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 30px;
+}
+.contact-form__submit {
+  padding: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+.contact-david__button {
+  padding: 5px;
+  color: white;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+.work-header {
+  text-align: center;
 }
 /* start grid fallback. this must be before .project-list and project-list__item */
 .project-list__item {
