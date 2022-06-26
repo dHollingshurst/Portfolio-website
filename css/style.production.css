@@ -326,7 +326,7 @@ confuse class title grid with the grid system*/
   }
 
   .project-list__item {
-    background-color: lightgray;
+    background-color: rgb(245, 236, 236);
     width: auto;
     min-height: auto;
     margin: 0;
